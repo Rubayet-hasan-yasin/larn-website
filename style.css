@@ -17,6 +17,8 @@ nav li{
     list-style: none;
     margin-right: 10px;
     padding: 5px;
+    border: 1px solid red;
+   
 }
 
 nav li a{
@@ -36,4 +38,75 @@ nav li .doo{
 }
 nav li:hover > .doo{
     display: block;
+}
+
+
+.module{
+    border: 1px solid red;
+    display: block;
+
+}
+
+.box-container, .inner{
+    width: 200px;
+    height: 200px;
+    border: 1px solid khaki;
+
+}
+.box-container{
+    background-color: lightblue;
+}
+
+.inner{
+    background-color: lightcoral;
+    transform: translate(50px, 50px) rotate(40deg) scale(0.6);
+}
+
+.transition-box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    background-color: coral;
+    transition: width 5s, height 10s, transform 5s ;
+
+}
+.transition-box:hover{
+    width: 400px;
+    height: 400px;
+    transform: rotate(180deg);
+}
+
+
+/* .bat{
+    height: 400px;
+    width: auto;
+    border: 1px solid red;
+} */
+
+.field:hover .bat{
+    transform: rotate(-50deg);
+    transform-origin: top right;
+}
+
+.bat{
+    transition: transform 0.2s ease-in;
+}
+
+.ball{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 25px;
+    position: relative;
+    left: 610px;
+    top: 100px;
+}
+
+.field:hover .ball{
+    transform: translate(600px, -100px);
+}
+
+.ball{
+    transition: transform 2s ease-out 0.2s;
+    
 }
