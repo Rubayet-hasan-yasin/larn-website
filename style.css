@@ -1,3 +1,39 @@
 p{
     color: blue;
 }
+
+td, th{
+    border: 1px solid lightgray;
+}
+table{
+    border-collapse:collapse;
+}
+
+nav > ul{
+    display: flex;
+}
+
+nav li{
+    list-style: none;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+li :hover{
+    background-color: yellowgreen;
+}
+nav li .doo{
+    display: none;
+    background-color: brown;
+    position: absolute;
+    padding: 0%;
+    
+}
+nav li:hover > .doo{
+    display: block;
+}
